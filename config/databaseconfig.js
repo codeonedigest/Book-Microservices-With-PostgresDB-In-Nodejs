@@ -1,3 +1,3 @@
 module.exports={
-    booksPostgresURI:`jdbc:postgresql://localhost:5432/postgres`
+    booksPostgresURI:`postgres://postgres:postgres@localhost:5432/postgres`
 }

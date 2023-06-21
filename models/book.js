@@ -1,9 +1,9 @@
 const Sequelize = require('sequelize');
+const dbconfig = require('../config/databaseconfig');
 
-//const { Schema } = mongoose;
 
 //Creating DB connection 
-const sequelize = new Sequelize('postgres://postgres:postgres@localhost:5432/postgres', {
+const sequelize = new Sequelize(dbconfig.booksPostgresURI, {
   dialect: 'postgres'
 });
 sequelize.authenticate().then(() => {

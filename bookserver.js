@@ -1,17 +1,12 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const Sequelize = require('sequelize');
 
 const customResourceResponse = require('./utils/constant');
-const dbconfig = require('./config/databaseconfig');
 const bookRoutes = require('./route/booksroute');
 
 const app = express();
 
 app.use(bodyParser.json());
-
-//mongoose.connect(dbconfig.booksMongoURI, {}).then(() => console.log('MongoDB Connected')).catch((err) => console.log(err));
-
 
 
 app.use('/api/v1', bookRoutes);
