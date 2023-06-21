@@ -16,6 +16,7 @@ A basic application to demonstrate the microservices architecture with postgresd
 # How to test
 import postman collection in postman and test.
 you can find the postman collections here. 
+https://github.com/codeonedigest/Book-Microservices-With-PostgresDB-In-Nodejs/tree/master/test/Nodejs-book-microservice-postgresdb-demo.postman_collection.json
  
 
 ## Books API
